@@ -149,35 +149,81 @@ footer {
 /* Responsivo */
 @media (max-width: 768px) {
 
+    /* Sección referencial */
     .referencia {
         flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
     .referencia img {
-        width: 60%;
+        width: 90%;
         max-width: none;
+        margin-bottom: 15px;
     }
 
+    .referencia p {
+        width: 90%;
+    }
+
+    /* Navegación principal */
+    .nav-principal {
+        flex-direction: column; /* 🔹 enlaces uno debajo del otro */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-principal a {
+        display: block;
+        width: 90%;
+        text-align: center;
+        background-color: #4a752c;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    /* Contenedor principal */
     .contenedor {
         flex-direction: column;
         align-items: center;
+        padding: 20px;
     }
 
     aside, main {
-        width: 100%;
+        width: 90%;
         max-width: none;
-        margin: 0;
+        margin: 10px 0;
     }
 
-    .imagenes {
-        grid-template-columns: repeat(2, 1fr);
+    /* Artículos */
+    main article {
+        width: 100%;
     }
 
+    /* Sección de imágenes */
+    section.imagenes {
+        flex-direction: column; /* 🔹 vertical en teléfono */
+        align-items: center;
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+    }
+
+    section.imagenes img {
+        width: 90%; /* 🔹 cada imagen ocupa casi todo el ancho */
+        margin-bottom: 15px;
+    }
+
+    /* Footer */
     footer {
         flex-direction: column;
+        align-items: center;
         text-align: center;
         gap: 10px;
+    }
+
+    footer div {
+        width: 90%;
     }
 }
 
