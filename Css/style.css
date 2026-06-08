@@ -1,0 +1,164 @@
+/*Fondo principal*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e6e6e6; 
+}
+
+/*Header*/
+header {
+    background-color: #6aa84f; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Referencial*/
+.referencia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #b6d7a8; 
+    padding: 20px;
+}
+
+.referencia img {
+    width: 45%;
+    border-radius: 5px;
+}
+
+.referencia p {
+    width: 50%;
+    text-align: justify;
+}
+
+/*Navegación principal*/
+.nav-principal {
+    background-color: #38761d; 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.nav-principal a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-principal a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #cfe2f3; 
+}
+
+/* Aside */
+aside {
+    flex: 1 1 25%;
+    background-color: #9fc5e8; 
+    border-radius: 5px;
+}
+
+aside h3 {
+    margin-top: 0;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    color: #003366;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* main */
+main {
+    flex: 1 1 70%;
+    background-color: #a4c2f4; 
+    padding: 20px;
+    border-radius: 5px;
+}
+
+main article {
+    background-color: #c9daf8; 
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+main h2 {
+    color: #003366;
+}
+
+/* Imágenes */
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: #fce5cd; 
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.imagenes img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #444444; 
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .referencia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .referencia img, .referencia p {
+        width: 100%;
+    }
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    aside, main {
+        width: 100%;
+    }
+
+    .imagenes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
