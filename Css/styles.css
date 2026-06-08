@@ -118,19 +118,19 @@ main h2 {
 }
 
 /* Imágenes */
-.imagenes {
-    width: 100vw;
+section.imagenes {
+    width: 100vw; 
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
-    background-color: #fce5cd; 
+    background-color: #fce5cd;
     padding: 20px;
-    display: flex; 
+    display: flex;
     justify-content: center;
     gap: 20px;
     box-sizing: border-box;
 }
 
-.imagenes img {
+section.imagenes img {
     width: 22%; 
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
