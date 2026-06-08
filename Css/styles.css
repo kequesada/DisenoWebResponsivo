@@ -18,17 +18,19 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     background-color: #b6d7a8; 
     padding: 20px;
+    gap: 20px;
 }
 
 .referencia img {
-    width: 45%;
+    width: 35%; 
     border-radius: 5px;
 }
 
 .referencia p {
-    width: 50%;
+    width: 60%;
     text-align: justify;
 }
 
@@ -63,12 +65,16 @@ header {
 /* Aside */
 aside {
     flex: 1 1 25%;
-    background-color: #9fc5e8; 
+    background-color: #9fc5e8; /* azul medio */
+    padding: 20px;
     border-radius: 5px;
+    margin: 0 auto; /* 🔹 centrado dentro del contenedor */
+    max-width: 300px;
 }
 
 aside h3 {
     margin-top: 0;
+    text-align: center;
 }
 
 aside ul {
@@ -113,9 +119,11 @@ main h2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    background-color: #fce5cd; 
+    background-color: #fce5cd; /* naranja claro */
     padding: 20px;
     border-radius: 5px;
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 .imagenes img {
